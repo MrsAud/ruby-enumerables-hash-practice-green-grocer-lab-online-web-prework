@@ -39,9 +39,7 @@ def apply_coupons(cart, coupons)
           cart[arr[:item]][:count] -= arr[:num]
         end
         
-        #if item is on clearance, add clearance to new 
-      # if cart has item and :count > :num, add item and adjust count
-      
+        
       end
     end
   end
