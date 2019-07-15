@@ -26,7 +26,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |arr|
     # iterate through array to access the key (descriptor) and values (actual data)
     arr.each do |key, value|
-      
+      # if cart has the item and :count = :num
     end
   end
   
