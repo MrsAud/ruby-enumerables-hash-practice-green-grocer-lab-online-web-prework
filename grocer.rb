@@ -29,7 +29,7 @@ def apply_coupons(cart, coupons)
       # if cart has the item and :count = :num, add item with adjusted price
       if cart.include? (arr[:item]) 
         new_item = "#{arr[:item]} W/COUPON"
-        #cart[new_item]
+        cart[new_item]
         #cart[new_item][:count] = coupons[:num]
         #cart[new_item][:price] = coupons[:cost] / coupons[:num]
       # if cart has item and :count > :num, add item and adjust count
