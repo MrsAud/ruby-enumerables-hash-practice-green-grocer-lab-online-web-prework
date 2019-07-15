@@ -22,8 +22,13 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  # iterate through coupons hash
-  
+  # iterate through coupons array
+  coupons.each do |arr|
+    # iterate through array to access the key (descriptor) and values (actual data)
+    arr.each do |key, value|
+      
+    end
+  end
   
   
   # return cart
