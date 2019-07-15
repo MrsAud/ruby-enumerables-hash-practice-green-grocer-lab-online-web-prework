@@ -33,7 +33,7 @@ def apply_coupons(cart, coupons)
         cart[new_item][:count] = arr[:num]
         cart[new_item][:price] = arr[:cost] / arr[:num]
       # if cart has item and :count > :num, add item and adjust count
-      binding.pry
+      
       end
     end
   end
