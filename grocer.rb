@@ -27,12 +27,14 @@ def apply_coupons(cart, coupons)
     # iterate through array to access the key (descriptor) and values (actual data)
     arr.each do |key, value|
       # if cart has the item and :count = :num, add item with adjusted price
-      if cart.value
+      if cart[value][:count] >= coupon[:item]
+        new_item = "#{value} W/COUPON"
+        cart[new_item][:count] = coupon[:num]
+        cart[new_item][:price] = coupon[:cost] / coupon[:num]
       # if cart has item and :count > :num, add item and adjust count
-    end
+      end
     end
   end
-  
   
   # return cart
   cart
